@@ -13,7 +13,7 @@ TagManager:
   - UI
   - Background
   - map
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -44,9 +44,18 @@ TagManager:
   - name: background
     uniqueID: 1052412159
     locked: 0
+  - name: middle
+    uniqueID: 216783847
+    locked: 0
   - name: map
     uniqueID: 3575387513
     locked: 0
+  - name: Enemy
+    uniqueID: 1343167499
+    locked: 0
   - name: Player
     uniqueID: 53816693
+    locked: 0
+  - name: Fireball
+    uniqueID: 2844099815
     locked: 0
