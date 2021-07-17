@@ -153,7 +153,7 @@ public class Player_Controller : MonoBehaviour
                 if (!m_Grounded && m_isDouble)
                 {
                     // Add vertical force to the player but less than when player is grounded
-                    m_RigidBody2D.AddForce(new Vector2(0f, m_JumpForce / 2));
+                    m_RigidBody2D.AddForce(new Vector2(0f, m_JumpForce));
                     m_isDouble = false;
                 }
             }

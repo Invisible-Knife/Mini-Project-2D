@@ -68,9 +68,9 @@ public class Enemy : MonoBehaviour
         animator.SetFloat("Health", health);
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Enemy_die"))
         { 
-            Destroy(gameObject); 
+            Destroy(gameObject);
+            LevelLoader.DestroyEnemy();
         }
-
     }
 
     private void FixedUpdate()

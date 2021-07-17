@@ -7,26 +7,28 @@ public class LevelLoader : MonoBehaviour
 {
     public int iLvToLoad;
     public string sLvToLoad;
+    public string currentScene;
 
-    public bool useIntLoad =false;
+    public static int enemyNum = 4;
+
+    public bool useIntLoad = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject collisionGameObject = collision.gameObject;
 
-        if(collisionGameObject.name == "Player")
+        if (collisionGameObject.name == "Player")
         {
             LoadScene();
         }
@@ -34,13 +36,24 @@ public class LevelLoader : MonoBehaviour
 
     void LoadScene()
     {
-        if(useIntLoad)
+        if (enemyNum == 0)
         {
-            SceneManager.LoadScene(iLvToLoad);
+            if (useIntLoad)
+            {
+                SceneManager.LoadScene(iLvToLoad);
+            }
+            else
+            {
+                SceneManager.LoadScene(sLvToLoad);
+            }
         }
         else
         {
-            SceneManager.LoadScene(sLvToLoad);
+            SceneManager.LoadScene(currentScene);
         }
+    }
+    public static void DestroyEnemy()
+    {
+        enemyNum--;
     }
 }
