@@ -606,6 +606,7 @@ MonoBehaviour:
   controller: {fileID: 586527210}
   health: 100
   animator: {fileID: 586527211}
+  levelLoader: {fileID: 761048064}
 --- !u!114 &586527210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -845,8 +846,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iLvToLoad: 0
-  sLvToLoad: SampleScene
+  sLvToLoad: Castle
   currentScene: Cavern
+  enemyNum: 4
   useIntLoad: 0
 --- !u!61 &761048065
 BoxCollider2D:
@@ -976,6 +978,7 @@ MonoBehaviour:
   controller: {fileID: 1090799802}
   health: 100
   animator: {fileID: 1090799803}
+  levelLoader: {fileID: 761048064}
 --- !u!114 &1090799802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2587,6 +2590,7 @@ MonoBehaviour:
   controller: {fileID: 1271410943}
   health: 100
   animator: {fileID: 1271410944}
+  levelLoader: {fileID: 761048064}
 --- !u!114 &1271410943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7355,6 +7359,7 @@ MonoBehaviour:
   controller: {fileID: 2126869528}
   health: 100
   animator: {fileID: 2126869529}
+  levelLoader: {fileID: 761048064}
 --- !u!114 &2126869528
 MonoBehaviour:
   m_ObjectHideFlags: 0

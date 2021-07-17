@@ -8,6 +8,8 @@ public class Enemy : MonoBehaviour
     public int health = 100;
     public Animator animator;
 
+    public LevelLoader levelLoader;
+
     float walkSpeed = 10f;
     float horizontalMove = 0f;
     int count = 0;
@@ -69,7 +71,7 @@ public class Enemy : MonoBehaviour
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Enemy_die"))
         { 
             Destroy(gameObject);
-            LevelLoader.DestroyEnemy();
+            levelLoader.DestroyEnemy();
         }
     }
 

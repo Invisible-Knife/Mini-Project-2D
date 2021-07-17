@@ -9,7 +9,8 @@ public class LevelLoader : MonoBehaviour
     public string sLvToLoad;
     public string currentScene;
 
-    public static int enemyNum = 4;
+    [SerializeField]
+    public int enemyNum = 4;
 
     public bool useIntLoad = false;
 
@@ -52,7 +53,7 @@ public class LevelLoader : MonoBehaviour
             SceneManager.LoadScene(currentScene);
         }
     }
-    public static void DestroyEnemy()
+    public void DestroyEnemy()
     {
         enemyNum--;
     }
