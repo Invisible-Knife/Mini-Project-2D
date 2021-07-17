@@ -1,4 +1,6 @@
-# Game Development - Assignment 01
+# Game Development - MiniProject 2D
+
+## Game : Plot Warrior
 
 ## Team members
 
